@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* 
+* This file contains the default styles for
+* the CKEditor content area.
+*
+* Changes to the styles here should be minimal,
+* as it will be utilised by all skins pulling
+* in the editor.
+*
+* To set skin-specific styles, follow the
+* instructions at:
+* https://github.com/mtwilliams5/nova_mod_ckeditor/wiki
+*/
+
+p {margin: 0 !important; line-height: 1;}
+body, #content-iframe { 
+	font-family: "lucida grande", verdana, arial, sans-serif;
+	color: #777;
+	font-size: 75%/1.5;
+}
