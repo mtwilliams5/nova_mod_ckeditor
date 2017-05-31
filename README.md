@@ -1,5 +1,19 @@
 # CKEditor Plugin for Nova 2
-This plugin has been tested to work on Nova 2.4.x. It may work on other versions of Nova, but has not been tested for such.
+This mod has been tested to work on Nova 2.4.x. It may work on other versions of Nova, but has not been tested for such.
+
+# IMPORTANT!
+This mod alters the default behaviour of the following functions in Nova's controllers. If you have already altered these functions in any way, you will need to resolve any conflicts between the two states of the controller files manually. If these functions are altered in any way in a Nova upgrade then sites running this mod will not see those changes until this mod is updated to also include said changes.
+Below is a list of the modified controllers and the functions within them:
+* `application/controllers/manage.php`
+  * logs
+  * news
+  * posts
+* `application/controllers/messages.php`
+  * write
+* `application/controllers/write.php`
+  * missionpost
+  * newsitem
+  * personallog
 
 ## Installation
 Download the files included in the mod to your computer (minus this README.md). The following files will need altering before the plugin can function:
